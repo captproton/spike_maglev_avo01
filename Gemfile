@@ -88,4 +88,6 @@ gem "whenever", require: false
 gem "responders", github: "heartcombo/responders", branch: "main"
 gem "avo"
 
-gem "maglevcms", "~> 1.1"
+# gem "maglevcms", "~> 1.1"
+gem "maglevcms", github: "SecondStarLabs/maglev-core", branch: "master"
+

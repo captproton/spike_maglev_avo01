@@ -1,4 +1,16 @@
 GIT
+  remote: https://github.com/SecondStarLabs/maglev-core.git
+  revision: cd4bbec5c0b10f554ef9b85f61609fac06a7cd6f
+  branch: master
+  specs:
+    maglevcms (1.1.7)
+      jbuilder (~> 2.11.2)
+      kaminari (~> 1.2.1)
+      maglev-injectable (~> 2.1.1)
+      rails (>= 6, <= 7.1)
+      vite_rails (>= 3, <= 4)
+
+GIT
   remote: https://github.com/heartcombo/responders.git
   revision: 956cd874a997083d350951fde4c6cc4944f64e80
   branch: main
@@ -196,12 +208,6 @@ GEM
       pagy (>= 3.5, < 6.0)
       rails (>= 6.0.3)
     maglev-injectable (2.1.1)
-    maglevcms (1.1.7)
-      jbuilder (~> 2.11.2)
-      kaminari (~> 1.2.1)
-      maglev-injectable (~> 2.1.1)
-      rails (>= 6, <= 7.1)
-      vite_rails (>= 3, <= 4)
     mail (2.8.1)
       mini_mime (>= 0.1.1)
       net-imap
@@ -405,7 +411,7 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   madmin
-  maglevcms (~> 1.1)
+  maglevcms!
   name_of_person (~> 1.1)
   noticed (~> 1.4)
   omniauth-facebook (~> 8.0)
