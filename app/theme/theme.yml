@@ -1,12 +1,14 @@
 # Please, do not change the id of the theme
 id: "theme"
 
-name: "theme"
+name: "Weblog theme"
 
-description: "A brief description of the theme"
+description: "A couple of sections tailored for a blog"
 
 section_categories:
-- name: content
+- name: nav
+- name: hero
+- name: blog
 
 # Properties of your theme such as the primary color, font name, ...etc.
 style_settings: []

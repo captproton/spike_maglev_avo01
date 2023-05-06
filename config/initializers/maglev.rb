@@ -2,7 +2,7 @@
 
 Maglev.configure do |config|
   # Title of the Editor window
-  # config.title = 'Maglev - Editor'
+  config.title = 'Weblog - Pages'
 
   # Logo of the Editor (top left corner).
   # Put your custom logo in the app/assets/images folder of your Rails application.
@@ -27,6 +27,7 @@ Maglev.configure do |config|
   # config.back_action = 'https://www.mysite.dev' # External url
   # config.back_action = :my_account_path # name of the route in your Rails application
   # config.back_action = ->(site) { redirect_to main_app.my_account_path(site_id: site.id) }
+  config.back_action = ->(site) { redirect_to main_app.avo_path }
 
   # I18n locale used in the Editor UI (by default, I18n.locale will be used)
   # config.ui_locale = 'fr' # make sure your locale has been registered in Rails.
