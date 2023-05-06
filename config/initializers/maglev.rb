@@ -55,15 +55,15 @@ Maglev.configure do |config|
   config.uploader = :active_storage
 
   # Collections mapping (https://docs.maglev.dev/guides/setup-collections)
-  # config.collections = {
-  #   products: {
-  #     model: 'Product',
-  #     fields: {
-  #       label: :name,
-  #       image: :thumbnail_url
-  #     }
-  #   }
-  # }
+  config.collections = {
+    products: {
+      model: 'Post',
+      fields: {
+        label: :title,
+        image: :thumbnail_url
+      }
+    }
+  }
 
   # Let your content editors references existing pages of your application but
   # not served/rendered by Maglev.

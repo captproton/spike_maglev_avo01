@@ -14,8 +14,6 @@ authenticate :user, lambda { |u| u.admin? } do
       post :stop_impersonating, on: :collection
     end
   end
-  mount Maglev::Engine => '/maglev'
-  get '(*path)', to: 'maglev/page_preview#index', defaults: { path: 'index' }, constraints: Maglev::PreviewConstraint.new
 end
 
   resources :notifications, only: [:index]
@@ -26,4 +24,7 @@ end
 
   # Defines the root path route ("/")
   # root "articles#index"
+  mount Maglev::Engine => '/maglev'
+  get '(*path)', to: 'maglev/page_preview#index', defaults: { path: 'index' }, constraints: Maglev::PreviewConstraint.new
+
 end

@@ -4,16 +4,19 @@
     <%= render 'shared/head' %>
   </head>
 
-  <body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0"> 
-      <%= render 'shared/navbar' %>
-      <%= render 'shared/notices' %>
+  <body class="bg-white font-poppins">
+    <!-- <main class="flex-shrink-0"> --> 
+      <%#= render 'shared/navbar' %>
+      <%#= render 'shared/notices' %>
 
-      <div class="container mt-4 mx-auto">
-        <%= yield %>
-      </div>
-    </main>
+      <!-- <div class="container mt-4 mx-auto"> -->
+        <%#= yield %>
+      <!-- </div> -->
+    <!-- </main> -->
 
-    <%= render 'shared/footer' %>
+    <%#= render 'shared/footer' %>
+    <%= render_maglev_section :nav_01 %>
+    <%= yield %>
+
   </body>
 </html>
